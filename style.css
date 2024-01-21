@@ -1,39 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
-}
-
-#tentacles {
-    width: 50px;
+    font-family: 'Cabin', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
 .header {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 1% 2%;
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+}
+
+#tentacles {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.header-text {
+    font-size: 24px;
 }
 
 .stats-container {
     display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 #games-container {
@@ -42,34 +54,47 @@ body {
     justify-content: space-around;
 }
 
-.game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
-}
-
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
     width: 300px;
     text-align: center;
-    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    object-fit: cover;
 }
 
 #button-container {
     text-align: center;
+    margin-top: 20px;
 }
 
 button {
-    font-family: 'Cabin';
+    font-family: 'Cabin', sans-serif;
+    background-color: #3498db;
+    color: #ffffff;
     border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
 }
